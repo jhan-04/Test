@@ -1,3 +1,2 @@
-a=str(34)
-a+='as'
-print(a)
+a='aaaabb'
+print(a.count('a'))
