@@ -1,10 +1,6 @@
 from collections import deque
-a=deque()
-a.append(1)
-a.append(2)
-b=deque()+a
+
+
+a=deque([1,2,4,1,5])
+a.sort()
 print(a)
-print(b)
-a.pop()
-print(a)
-print(b)

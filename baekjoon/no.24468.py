@@ -1,4 +1,4 @@
-# not done
+#ㅇ
 L,N,T= map(int, input().split())
 location=[0]*N
 dir=[0]*N
@@ -12,8 +12,6 @@ for t in range(T):
     #change direction when ball in next the wall
     dir=[-1*dir[i] if (location[i]==0 and dir[i]==-1)or(location[i]==L and dir[i]==1) else dir[i] for i in range(N)]
     location=[loca+mov for loca,mov in zip(location,dir)]
-    #print('time=',t,'location=',location,'dir=',dir)
     if len(location)!=len(list(set(location))):
         cnt+=1
-        #print(len(location),len(list(set(location))))
 print(cnt)
